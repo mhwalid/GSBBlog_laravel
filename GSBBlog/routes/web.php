@@ -13,9 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/walid', function () {
-    return view('pages.index');
+Route::get('/w', function () {
+    return view('welcome');
 });
+
 
 Route::get('/index', 'PagesController@index');
 Route::get('/about', 'PagesController@about');
@@ -25,3 +26,5 @@ Route::get('/services', 'PagesController@services');
 //that will create alle resourcez route
 
 Route::resource('posts', 'PostsController');
+
+
